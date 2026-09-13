@@ -181,6 +181,7 @@ h1 em, h2 span { color: var(--lime); font-style: normal; }
 .pricing-heading h2 { font-size: clamp(2.65rem, 4.5vw, 4.75rem); }
 .pricing-heading h2 span { color: var(--lime); }
 .plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 72px; align-items: stretch; }
+.plans-grid-single { grid-template-columns: minmax(0, 480px); justify-content: center; }
 .plan-card { position: relative; padding: 32px 31px 29px; border: 1px solid rgba(255,255,255,.12); background: #111412; }
 .plan-card.plan-featured { border-color: var(--lime); background: linear-gradient(145deg, rgba(202,255,56,.1), transparent 33%), #151a16; }
 .recommended { position: absolute; right: 24px; top: -12px; display: flex; align-items: center; gap: 6px; padding: 7px 10px; background: var(--lime); color: var(--ink); font: 700 8px/1 "Space Grotesk", sans-serif; letter-spacing: .12em; }

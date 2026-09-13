@@ -5,18 +5,18 @@ import {
   Check,
   Clock3,
   Code2,
+  Dumbbell,
   ExternalLink,
-  Globe2,
   Instagram,
-  Laptop2,
   Menu,
   MessageCircle,
   MonitorSmartphone,
   MoveRight,
   Palette,
   Rocket,
+  Scale,
   Sparkles,
-  UserRound,
+  Stethoscope,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -28,35 +28,35 @@ const services = [
   {
     number: "01",
     icon: Sparkles,
-    title: "Landing page de vendas",
-    text: "Uma página objetiva e estratégica para apresentar uma oferta, serviço ou campanha e converter visitantes em clientes.",
+    title: "Salões de beleza e estética",
+    text: "Uma página que mostra seus serviços e diferenciais de forma profissional, com caminho direto para o WhatsApp.",
   },
   {
     number: "02",
-    icon: Globe2,
-    title: "Landing page institucional",
-    text: "Uma presença digital enxuta para sua empresa transmitir confiança desde o primeiro acesso.",
+    icon: Stethoscope,
+    title: "Dentistas e clínicas",
+    text: "Transmita confiança antes da primeira consulta, com informações claras e contato facilitado.",
   },
   {
     number: "03",
-    icon: UserRound,
-    title: "Landing page para profissionais",
-    text: "Mostre seu trabalho, sua história e como contratar você em uma experiência sob medida.",
+    icon: Scale,
+    title: "Advogados e consultores autônomos",
+    text: "Uma presença séria e objetiva para quem vive de indicação e precisa ser encontrado no Google.",
   },
   {
     number: "04",
-    icon: Laptop2,
-    title: "Landing page para pequenos negócios",
-    text: "Uma solução enxuta e profissional para negócios locais que querem ser encontrados online.",
+    icon: Dumbbell,
+    title: "Personal trainers, restaurantes e imobiliárias",
+    text: "Uma landing page enxuta para negócios locais que não querem mais perder cliente para o concorrente.",
   },
 ];
 
 const process = [
-  ["01", "Você me explica sua ideia", "Entendo seu negócio, seu público e o que o site precisa fazer por você."],
+  ["01", "Você me explica sua ideia", "Entendo seu negócio, seu público e o que a landing page precisa fazer por você."],
   ["02", "Eu crio a estrutura", "Organizo as informações para que a página seja clara, bonita e fácil de navegar."],
-  ["03", "Desenvolvimento", "Transformo a estrutura em um site responsivo, rápido e pronto para receber visitantes."],
+  ["03", "Desenvolvimento", "Transformo a estrutura em uma landing page responsiva, rápida e pronta para receber visitantes."],
   ["04", "Revisão", "Você acompanha, sugere ajustes e aprovamos cada detalhe antes de publicar."],
-  ["05", "Publicação", "Coloco seu site no ar e entrego tudo funcionando para você divulgar."],
+  ["05", "Publicação", "Coloco sua landing page no ar e entrego tudo funcionando para você divulgar."],
 ];
 
 const benefits = [
@@ -127,11 +127,11 @@ export default function Home() {
 
       <section className="hero section-shell" id="inicio">
         <div className="hero-copy" data-reveal>
-          <div className="eyebrow"><span className="eyebrow-dot" /> DESENVOLVIMENTO DE LANDING PAGES PARA NEGÓCIOS REAIS</div>
+          <div className="eyebrow"><span className="eyebrow-dot" /> LANDING PAGES PARA SALÕES, CLÍNICAS, ADVOGADOS E AUTÔNOMOS</div>
           <h1>Landing pages profissionais que fazem sua empresa <em>parecer grande.</em></h1>
-          <p className="hero-description">Eu crio landing pages modernas, rápidas e responsivas para pequenos negócios que querem converter visitantes em clientes.</p>
+          <p className="hero-description">Eu crio landing pages modernas, rápidas e responsivas para salões de beleza, dentistas, advogados autônomos, personal trainers, restaurantes e imobiliárias que não querem mais perder cliente para o concorrente que aparece primeiro no Google.</p>
           <div className="hero-actions">
-            <WhatsAppButton>Quero meu site</WhatsAppButton>
+            <WhatsAppButton>Quero minha landing page</WhatsAppButton>
             <a className="button button-ghost" href="#projetos">Ver projetos <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-proof"><span><Check size={14} /> Do design à publicação</span><span><Check size={14} /> Sem complicação</span></div>
@@ -152,7 +152,7 @@ export default function Home() {
       <section className="intro-strip">
         <div className="section-shell intro-grid">
           <p className="intro-kicker">UMA PRESENÇA DIGITAL<br /><span>QUE TRABALHA POR VOCÊ</span></p>
-          <p className="intro-text">Seu negócio já tem valor. A landing page certa só precisa deixar isso claro — com personalidade, clareza e um caminho simples para seu cliente entrar em contato.</p>
+          <p className="intro-text">Seu cliente já pesquisa no Google e no Instagram antes de fechar negócio. Se ele não te encontra lá, fecha com o concorrente. A landing page certa resolve isso — com clareza e um caminho direto para o WhatsApp.</p>
           <a className="round-link" href="#sobre" aria-label="Conheça meu trabalho"><ArrowDownRight size={20} /></a>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="about-content" data-reveal>
           <h2>Prazer, eu sou <span>José Anderson.</span></h2>
           <div className="about-columns">
-            <p>Sou formado em Técnico em Desenvolvimento de Sistemas e atualmente estou construindo minha experiência profissional através de projetos reais e sites publicados.</p>
+            <p>Sou formado em Técnico em Desenvolvimento de Sistemas e atualmente estou construindo minha experiência profissional através de projetos reais e landing pages publicadas.</p>
             <div><p>Meu foco é simples: transformar uma ideia ou negócio em uma presença digital profissional.</p><p>Cada projeto recebe atenção individual, cuidado nos detalhes e foco em entregar algo que realmente possa ser usado pelo cliente.</p></div>
           </div>
           <div className="about-signature"><span className="signature-line" /><span>desenvolvimento com intenção</span></div>
@@ -189,16 +189,15 @@ export default function Home() {
 
       <section className="pricing-section" id="precos">
         <div className="section-shell">
-          <div className="section-heading pricing-heading" data-reveal><div><SectionLabel>04 / INVESTIMENTO</SectionLabel><h2>Seu negócio precisa de uma landing page.<br /><span>Seu primeiro passo pode começar em R$500.</span></h2></div><p>Planos claros, sem preço riscado falso e sem letras miúdas. Você escolhe o que faz sentido para o momento do seu negócio.</p></div>
-          <div className="plans-grid">
-            <article className="plan-card" data-reveal><div className="plan-top"><div><p className="plan-label">LANDING PAGE ESSENCIAL</p><p className="plan-desc">Para começar com uma página que converte.</p></div><span className="plan-index">01</span></div><div className="price">R$500 <small>pagamento único</small></div><ul>{["Design personalizado", "Responsivo para celular", "Até 5 seções", "Botão de WhatsApp", "Formulário de contato", "Links para redes sociais", "Publicação online", "7 dias de suporte"].map((item) => <li key={item}><Check size={16} />{item}</li>)}</ul><WhatsAppButton>Quero minha landing page por R$500</WhatsAppButton><p className="plan-note">Vagas promocionais para projetos realizados em setembro.</p></article>
-            <article className="plan-card plan-featured" data-reveal><div className="recommended">MAIS COMPLETO <Sparkles size={13} /></div><div className="plan-top"><div><p className="plan-label">LANDING PAGE COMPLETA</p><p className="plan-desc">Para quem quer uma experiência mais completa.</p></div><span className="plan-index">02</span></div><div className="price">R$700 <small>pagamento único</small></div><p className="includes">Inclui tudo do plano de R$500 +</p><ul>{["Até 8 seções", "Animações modernas", "Galeria/portfólio", "SEO básico", "Google Maps", "Otimização para celular", "15 dias de suporte"].map((item) => <li key={item}><Check size={16} />{item}</li>)}</ul><WhatsAppButton>Quero este plano</WhatsAppButton></article>
+          <div className="section-heading pricing-heading" data-reveal><div><SectionLabel>04 / INVESTIMENTO</SectionLabel><h2>Seu negócio precisa de uma landing page.<br /><span>Seu primeiro passo pode começar em R$497.</span></h2></div><p>Um plano claro, sem preço riscado falso e sem letras miúdas.</p></div>
+          <div className="plans-grid plans-grid-single">
+            <article className="plan-card plan-featured" data-reveal><div className="plan-top"><div><p className="plan-label">LANDING PAGE PROFISSIONAL</p><p className="plan-desc">Uma página completa para apresentar seu negócio e converter visitantes.</p></div></div><div className="price">R$497 <small>pagamento único</small></div><ul>{["Design personalizado", "Responsivo para celular", "Até 5 seções", "Botão de WhatsApp", "Formulário de contato", "Links para redes sociais", "SEO básico", "Publicação online", "7 dias de suporte"].map((item) => <li key={item}><Check size={16} />{item}</li>)}</ul><WhatsAppButton>Quero minha landing page por R$497</WhatsAppButton><p className="plan-note">Preço de lançamento por tempo limitado.</p></article>
           </div>
         </div>
       </section>
 
       <section className="section-shell process-section" id="processo">
-        <div className="process-intro" data-reveal><SectionLabel>05 / COMO FUNCIONA</SectionLabel><h2>Do primeiro “e se…”<br />ao <span>site no ar.</span></h2><p>Um processo simples, próximo e sem linguagem complicada. Você sabe onde está e o que acontece depois.</p></div>
+        <div className="process-intro" data-reveal><SectionLabel>05 / COMO FUNCIONA</SectionLabel><h2>Do primeiro “e se…”<br />à <span>landing page no ar.</span></h2><p>Um processo simples, próximo e sem linguagem complicada. Você sabe onde está e o que acontece depois.</p></div>
         <div className="process-list">{process.map(([number, title, text]) => <div className="process-row" key={number} data-reveal><span className="process-number">{number}</span><h3>{title}</h3><p>{text}</p><ArrowUpRight size={19} /></div>)}</div>
       </section>
 
