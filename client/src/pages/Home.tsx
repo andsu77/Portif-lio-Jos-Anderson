@@ -9,6 +9,7 @@ import {
   ExternalLink,
   GitBranch,
   Instagram,
+  Linkedin,
   Mail,
   Menu,
   MessageCircle,
@@ -205,7 +206,7 @@ export default function Home() {
 
       <section className="final-cta"><div className="cta-noise" /><div className="section-shell final-cta-inner" data-reveal><div><SectionLabel>07 / VAMOS CONVERSAR</SectionLabel><h2>Buscando minha primeira<br /><em>oportunidade CLT.</em></h2><p>Estou disponível para vagas de desenvolvedor júnior, estagiário ou trainee. Se sua empresa está contratando, ou você conhece alguém que está, vamos conversar.</p></div><WhatsAppButton>Falar comigo no WhatsApp</WhatsAppButton></div></section>
 
-      <footer className="site-footer"><div className="section-shell footer-main"><a className="brand" href="#inicio"><span className="brand-mark">JA</span><span className="brand-text">JOSÉ <strong>ANDERSON</strong></span></a><p>Desenvolvedor full-stack em busca de uma vaga CLT.<br />Node.js, TypeScript e React.</p><div className="footer-contact"><span>FALE DIRETO COMIGO</span><a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={17} /> WhatsApp</a></div></div><div className="section-shell footer-bottom"><span>© 2026 José Anderson. Todos os direitos reservados.</span><span>Desenvolvido com intenção.</span><div className="footer-socials"><a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={17} /></a><a href="https://instagram.com/andsu00" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={17} /></a><a href="mailto:joseandersonneves15@gmail.com" aria-label="E-mail"><Mail size={17} /></a><span title="GitHub será adicionado quando configurado"><Code2 size={17} /></span></div></div></footer>
+      <footer className="site-footer"><div className="section-shell footer-main"><a className="brand" href="#inicio"><span className="brand-mark">JA</span><span className="brand-text">JOSÉ <strong>ANDERSON</strong></span></a><p>Desenvolvedor full-stack em busca de uma vaga CLT.<br />Node.js, TypeScript e React.</p><div className="footer-contact"><span>FALE DIRETO COMIGO</span><a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={17} /> WhatsApp</a></div></div><div className="section-shell footer-bottom"><span>© 2026 José Anderson. Todos os direitos reservados.</span><span>Desenvolvido com intenção.</span><div className="footer-socials"><a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={17} /></a><a href="https://instagram.com/andsu00" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={17} /></a><a href="https://www.linkedin.com/in/jose-andersonn" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={17} /></a><a href="mailto:joseandersonneves15@gmail.com" aria-label="E-mail"><Mail size={17} /></a><span title="GitHub será adicionado quando configurado"><Code2 size={17} /></span></div></div></footer>
 
       <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Falar com José pelo WhatsApp"><MessageCircle size={22} /></a>
     </main>
